@@ -38,7 +38,7 @@ function viewItem(item) {
   return `${item.itemName} at $${item.itemPrice}`
 }
 
-function total() {
+function total(cart) {
   // prices = cart.map(cart.item[itemPrice]) //array of prices from cart items
   let prices = []
   for ( let i = 0; i < cart.length; i++ ) {
