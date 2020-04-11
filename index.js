@@ -39,8 +39,14 @@ function viewItem(item) {
 }
 
 function total() {
-  // write your code here
-  return
+  // prices = cart.map(cart.item[itemPrice]) //array of prices from cart items
+  let prices = []
+  for ( let i = 0; i < cart.length; i++ ) {
+    prices.push(cart[1[i]])
+    return prices.reduce((total, price) => total + price, 0)
+  }
+  // prices.map(function(itemPrice, item) {// map itemPrice from items in cart
+//(function(currentValue, index, arr), thisValue)
 }
 
 function removeFromCart(item) {

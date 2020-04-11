@@ -96,27 +96,27 @@ describe("viewCart()", function() {
     );
   });
 
-// describe("total()", function() {
-//   it("adds up the price of all items in the cart", function() {
-//     addToCart("sorghum");
-//     addToCart("tarragon");
-//
-//     const sorghumCost = getCart()[0].itemPrice;
-//     const tarragonCost = getCart()[1].itemPrice;
-//
-//     let totalCost = sorghumCost + tarragonCost;
-//
-//     expect(total()).toBe(totalCost);
-//
-//     addToCart("urchin");
-//
-//     const urchinCost = getCart()[2].itemPrice;
-//
-//     totalCost += urchinCost;
-//
-//     expect(total()).toBe(totalCost);
-//   });
-// });
+describe("total()", function() {
+  it("adds up the price of all items in the cart", function() {
+    addToCart("sorghum");
+    addToCart("tarragon");
+
+    const sorghumCost = getCart()[0].itemPrice;
+    const tarragonCost = getCart()[1].itemPrice;
+
+    let totalCost = sorghumCost + tarragonCost;
+
+    expect(total()).toBe(totalCost);
+
+    addToCart("urchin");
+
+    const urchinCost = getCart()[2].itemPrice;
+
+    totalCost += urchinCost;
+
+    expect(total()).toBe(totalCost);
+  });
+});
 //
 // describe("removeFromCart()", function() {
 //   it("removes the specified item from the cart", function() {
